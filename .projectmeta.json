@@ -1,0 +1,20 @@
+{
+  "name": "Amaj Academic Center",
+  "description": "A comprehensive management system for educational academies - سیستم مدیریت آموزشگاه",
+  "version": "1.0.0",
+  "author": "Amaj Academic Center",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azadmuhammady2019-commits/amaj-academic-center"
+  },
+  "keywords": [
+    "academy",
+    "management",
+    "education",
+    "student-management",
+    "teacher-management",
+    "vue3",
+    "vite"
+  ],
+  "license": "MIT"
+}
