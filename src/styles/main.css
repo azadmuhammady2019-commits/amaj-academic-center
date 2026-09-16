@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f5f6f8;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(135deg, #7b3f10, #d47a1c);
+  color: white;
+  padding: 18px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header small {
+  opacity: 0.9;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  padding: 10px;
+  background: white;
+  position: sticky;
+  top: 78px;
+  z-index: 4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+nav button {
+  border: 0;
+  background: #f0f1f3;
+  padding: 10px 14px;
+  border-radius: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background: #e0e1e3;
+}
+
+nav button.active {
+  background: #d47a1c;
+  color: white;
+}
+
+main {
+  padding: 16px;
+  max-width: 1200px;
+  margin: auto;
+  flex: 1;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card b {
+  font-size: 25px;
+  display: block;
+  margin-top: 7px;
+  color: #d47a1c;
+}
+
+.muted {
+  color: #777;
+  font-size: 13px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+
+.toolbar input,
+.toolbar select,
+.toolbar button,
+.form input,
+.form select,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  background: white;
+  font-family: inherit;
+}
+
+.toolbar input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.toolbar button,
+.primary {
+  background: #7b3f10 !important;
+  color: white;
+  border: 0 !important;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toolbar button:hover,
+.primary:hover {
+  background: #5f2f0a !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+  font-size: 13px;
+}
+
+th {
+  background: #faf3eb;
+  font-weight: 600;
+  color: #333;
+}
+
+tr:hover {
+  background: #fafafa;
+}
+
+.form {
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 9px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.form textarea {
+  min-height: 70px;
+  grid-column: 1 / -1;
+}
+
+.form button {
+  padding: 10px;
+  border: 0;
+  border-radius: 9px;
+  background: #7b3f10;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #5f2f0a;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 20px;
+  background: #e9f7ed;
+  color: #18753b;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge.danger {
+  background: #ffecec;
+  color: #a00;
+}
+
+.empty {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 25px;
+  background: white;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 14px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  th,
+  td {
+    padding: 7px;
+    font-size: 11px;
+  }
+
+  main {
+    padding: 8px;
+  }
+
+  nav {
+    top: 60px;
+  }
+}
